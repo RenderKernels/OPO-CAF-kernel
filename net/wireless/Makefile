@@ -21,3 +21,5 @@ $(obj)/regdb.c: $(src)/db.txt $(src)/genregdb.awk
 	@$(AWK) -f $(srctree)/$(src)/genregdb.awk < $< > $@
 
 clean-files := regdb.c
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

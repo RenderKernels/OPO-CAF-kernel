@@ -12,3 +12,5 @@ wimax-y :=		\
 wimax-$(CONFIG_DEBUG_FS) += debugfs.o
 
 
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

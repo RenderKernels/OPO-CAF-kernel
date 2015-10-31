@@ -17,3 +17,4 @@ obj-$(CONFIG_ARCH_MSM9625) += msm_bus_board_9625.o
 obj-$(CONFIG_ARCH_MSM8226) += msm_bus_id.o
 obj-$(CONFIG_ARCH_MSM8610) += msm_bus_id.o
 obj-$(CONFIG_DEBUG_FS) += msm_bus_dbg.o
+CFLAGS_KERNEL += -fstrict-aliasing

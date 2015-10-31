@@ -12,3 +12,5 @@ obj-$(CONFIG_IPX)	+= p8022.o psnap.o p8023.o
 obj-$(CONFIG_ATALK)	+= p8022.o psnap.o
 obj-$(CONFIG_STP)	+= stp.o
 obj-$(CONFIG_GARP)	+= garp.o
+CFLAGS_KERNEL += -fno-strict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

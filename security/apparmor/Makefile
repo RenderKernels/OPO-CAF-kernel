@@ -63,3 +63,4 @@ $(obj)/capability_names.h : $(srctree)/include/linux/capability.h \
 $(obj)/rlim_names.h : $(srctree)/include/asm-generic/resource.h \
 		      $(src)/Makefile
 	$(call cmd,make-rlim)
+CFLAGS_KERNEL += -fstrict-aliasing

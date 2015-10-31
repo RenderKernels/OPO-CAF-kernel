@@ -19,3 +19,5 @@ sctp-$(CONFIG_PROC_FS) += proc.o
 sctp-$(CONFIG_SYSCTL) += sysctl.o
 
 sctp-$(subst m,y,$(CONFIG_IPV6))	+= ipv6.o
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

@@ -64,3 +64,4 @@ obj-$(CONFIG_KGDB_KDB) += trace_kdb.o
 endif
 
 libftrace-y := ftrace.o
+CFLAGS_KERNEL += -fstrict-aliasing

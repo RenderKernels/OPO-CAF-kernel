@@ -30,3 +30,4 @@ mpi-$(CONFIG_MPILIB_EXTRA) += \
 	mpi-mpow.o			\
 	mpi-mul.o			\
 	mpi-scan.o
+CFLAGS_KERNEL += -fstrict-aliasing

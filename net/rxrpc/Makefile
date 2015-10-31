@@ -27,3 +27,5 @@ endif
 obj-$(CONFIG_AF_RXRPC) += af-rxrpc.o
 
 obj-$(CONFIG_RXKAD) += rxkad.o
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

@@ -18,3 +18,4 @@ obj-$(CONFIG_SCHEDSTATS) += stats.o
 obj-$(CONFIG_SCHED_DEBUG) += debug.o
 
 
+CFLAGS_KERNEL += -fstrict-aliasing

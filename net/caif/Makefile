@@ -13,3 +13,5 @@ obj-$(CONFIG_CAIF) += caif_socket.o
 obj-$(CONFIG_CAIF_USB) += caif_usb.o
 
 export-y := caif.o
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

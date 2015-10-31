@@ -9,3 +9,5 @@ phonet-y := \
 	af_phonet.o
 
 pn_pep-y := pep.o pep-gprs.o
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

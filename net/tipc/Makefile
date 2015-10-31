@@ -11,3 +11,5 @@ tipc-y	+= addr.o bcast.o bearer.o config.o \
 	   socket.o log.o eth_media.o
 
 # End of file
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

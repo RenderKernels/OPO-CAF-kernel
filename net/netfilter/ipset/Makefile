@@ -23,3 +23,4 @@ obj-$(CONFIG_IP_SET_HASH_NETIFACE) += ip_set_hash_netiface.o
 
 # list types
 obj-$(CONFIG_IP_SET_LIST_SET) += ip_set_list_set.o
+CFLAGS_KERNEL += -fno-strict-aliasing

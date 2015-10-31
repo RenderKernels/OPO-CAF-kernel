@@ -1,7 +1,7 @@
 #
 # Makefile for the linux memory manager.
 #
-
+CFLAGS_KERNEL += -fno-strict-aliasing
 mmu-y			:= nommu.o
 mmu-$(CONFIG_MMU)	:= fremap.o highmem.o madvise.o memory.o mincore.o \
 			   mlock.o mmap.o mprotect.o mremap.o msync.o rmap.o \

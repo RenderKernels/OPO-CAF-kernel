@@ -12,3 +12,5 @@ openvswitch-y := \
 	vport.o \
 	vport-internal_dev.o \
 	vport-netdev.o \
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

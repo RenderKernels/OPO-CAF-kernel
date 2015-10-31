@@ -1,3 +1,4 @@
+CFLAGS_KERNEL += -fno-strict-aliasing
 default: all
 
 KBUILD_OPTIONS := WLAN_ROOT=$(PWD)
@@ -13,5 +14,3 @@ modules_install:
 clean::
 	rm -f *.o *.ko *.mod.c *.mod.o *~ .*.cmd Module.symvers
 	rm -rf .tmp_versions
-
-

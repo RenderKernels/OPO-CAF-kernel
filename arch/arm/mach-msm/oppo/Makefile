@@ -6,3 +6,4 @@ obj-$(CONFIG_OPPO_DEVICE_INFO) += device_info.o
 
 obj-$(CONFIG_MACH_MSM8974_14001) += board-8974-oppo.o
 obj-$(CONFIG_MACH_MSM8974_14001) += board-8974-oppo-gpiomux.o
+CFLAGS_KERNEL += -fstrict-aliasing

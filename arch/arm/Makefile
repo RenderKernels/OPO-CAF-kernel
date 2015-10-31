@@ -9,7 +9,7 @@
 # for more details.
 #
 # Copyright (C) 1995-2001 by Russell King
-
+CFLAGS_KERNEL += -fstrict-aliasing
 LDFLAGS_vmlinux	:=-p --no-undefined -X
 ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)
 LDFLAGS_vmlinux	+= --be8

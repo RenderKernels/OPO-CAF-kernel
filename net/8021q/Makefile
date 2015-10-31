@@ -8,3 +8,5 @@ obj-$(CONFIG_VLAN_8021Q)		+= 8021q.o
 8021q-$(CONFIG_VLAN_8021Q_GVRP)		+= vlan_gvrp.o
 8021q-$(CONFIG_PROC_FS)			+= vlanproc.o
 
+CFLAGS_KERNEL += -fstrict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

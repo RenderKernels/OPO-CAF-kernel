@@ -5,3 +5,4 @@
 obj-$(CONFIG_BT_HIDP) += hidp.o
 
 hidp-objs := core.o sock.o
+CFLAGS_KERNEL += -fno-strict-aliasing

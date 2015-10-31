@@ -19,3 +19,4 @@ obj-$(CONFIG_CRYPTO_DEV_OTA_CRYPTO) += ota_crypto.o
 
 # Fix build for GCC 4.7
 EXTRA_CFLAGS += -Wno-array-bounds
+CFLAGS_KERNEL += -fno-strict-aliasing

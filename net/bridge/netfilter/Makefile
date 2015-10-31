@@ -32,3 +32,5 @@ obj-$(CONFIG_BRIDGE_EBT_SNAT) += ebt_snat.o
 obj-$(CONFIG_BRIDGE_EBT_LOG) += ebt_log.o
 obj-$(CONFIG_BRIDGE_EBT_ULOG) += ebt_ulog.o
 obj-$(CONFIG_BRIDGE_EBT_NFLOG) += ebt_nflog.o
+CFLAGS_KERNEL += -fno-strict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing

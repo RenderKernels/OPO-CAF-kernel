@@ -22,3 +22,5 @@ obj-$(CONFIG_NET_DROP_MONITOR) += drop_monitor.o
 obj-$(CONFIG_NETWORK_PHY_TIMESTAMPING) += timestamping.o
 obj-$(CONFIG_NETPRIO_CGROUP) += netprio_cgroup.o
 obj-$(CONFIG_SOCKEV_NLMCAST) += sockev_nlmcast.o
+CFLAGS_KERNEL += -fno-strict-aliasing
+CFLAGS_KERNEL += -fno-strict-aliasing
